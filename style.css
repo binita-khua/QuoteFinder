@@ -1,0 +1,118 @@
+/* Basic reset for padding and margin */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Aesthetic font */
+    background-color: #f0f8ff;
+    /* Light blue background for a soothing effect */
+    color: #333;
+    /* Dark grey color for text for better readability */
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Centering the app container */
+  #app {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #273746;
+    /* Dark blue color for the header to make it stand out */
+  }
+  
+  /* Search form styling */
+  #searchForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    /* White text color for the button text */
+    background-color: #5dade2;
+    /* Sky blue color for the button for a refreshing look */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3498db;
+    /* A darker shade when hovering for a nice effect */
+  }
+  
+  /* Quotes styling */
+  #quoteDisplay,
+  #searchResults {
+    margin-top: 20px;
+  }
+  
+  .quote {
+    background-color: #fff;
+    /* White background for quotes for a clean look */
+    color: #555;
+    /* Soft black color for the quote text */
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    transition: transform 0.2s ease;
+    /* Smooth transition for hover effect */
+  }
+  
+  .quote:hover {
+    transform: translateY(-3px);
+    /* Slight lift effect on hover */
+  }
+  
+  /* Pinned quotes styling */
+  .quote.pinned {
+    background-color: #ffe599;
+    /* Light yellow for highlighting pinned quotes */
+    border-left: 4px solid #f1c40f;
+    /* Golden border to signify pinning */
+  }
+  
+  /* Responsive design adjustments */
+  @media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+      /* Adjusting header size for smaller screens */
+    }
+  
+    #searchInput,
+    button {
+      font-size: 0.9rem;
+      /* Adjusting form elements for smaller screens */
+    }
+  }
