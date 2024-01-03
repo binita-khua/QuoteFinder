@@ -1,6 +1,7 @@
 **Quote Finder**
 
 **Overview**
+
 "Quote Finder" is a simple web application that allows users to search for quotes by author. It features a user-friendly interface, where quotes can be displayed and pinned for quick reference. The application is built using HTML, CSS, and JavaScript, making it lightweight and easily deployable on any web server.
 
 **Features**
